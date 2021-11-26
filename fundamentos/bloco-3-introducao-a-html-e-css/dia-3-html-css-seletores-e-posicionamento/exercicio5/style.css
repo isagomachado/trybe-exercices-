@@ -1,0 +1,60 @@
+.element {
+    background-color: yellow;
+}
+
+.element:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+.element:nth-child(even) {
+    color: green;
+}
+
+.header-tag {
+    color: red;
+}
+
+.header-tag em {
+    width: 40px;
+    border: 1px black solid;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.language-element {
+    background-color:lightskyblue;
+}
+
+.java-element{
+    background-color: pink;
+}
+
+ul.friendly-list li:hover {
+    font-weight: bold;
+}
+
+ul.friendly-list li.stk:hover{
+    background-color: orangered;   
+}
+
+ul.friendly-list li.w3s:hover{
+    background-color: green;
+}
+
+ul.friendly-list li.moz:hover{
+    background-color: black;
+}
+
+ul.friendly-list li.dev:hover{
+    background-color: yellow;
+}
+
+ul.friendly-list li.try:hover{
+    background-color: rgb(61, 156, 61);
+}
