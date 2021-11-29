@@ -40,3 +40,13 @@ for (let index = 0; index < numbers.length; index += 1){
   }
 }
  console.log("O maior numero da array é:", maior)
+
+ //exercicio6
+ let impares = []
+
+ for (let i = 0; i < numbers.length; i += 1){
+   if (numbers[i] % 2 !== 0){
+     impares.push(numbers[i])
+   }
+ }
+ console.log(impares)
