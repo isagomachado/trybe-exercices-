@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  background-color: #43AA8B;
+  text-align: center;
+  padding: 20px;
+}
+
+.links {
+  background-color: #F9C74F;
+  padding: 10px;
+}
+
+.initial {
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  background-color: #90BE6D;
+  text-align: justify;
+
+}
+.about {
+  margin-top: 12px;
+  margin-left: 12px;
+}
