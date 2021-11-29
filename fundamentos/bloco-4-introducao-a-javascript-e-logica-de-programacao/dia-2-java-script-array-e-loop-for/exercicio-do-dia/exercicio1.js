@@ -25,9 +25,18 @@ let media = soma2 / numbers.length
 console.log("A média aritmética é:", media)
 
 //exercicio4 - complemento do codigo anterior
-
 if (media > 20){
   console.log("Valor maior que 20")
 }else {
-  "Valor menor ou igual a 20"
+  console.log("Valor menor ou igual a 20")
 }
+
+//exercicio5
+let maior = 0
+
+for (let index = 0; index < numbers.length; index += 1){
+  if (maior < numbers[index]){
+    maior = numbers[index]
+  }
+}
+ console.log("O maior numero da array é:", maior)
