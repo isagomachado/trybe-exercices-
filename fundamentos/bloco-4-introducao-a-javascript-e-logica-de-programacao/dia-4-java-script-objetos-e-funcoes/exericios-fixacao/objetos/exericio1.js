@@ -30,4 +30,13 @@ let mensagem2 =
   player["bestInTheWord"].length +
   " vezes!";
 
-  console.log(mensagem2)
+console.log(mensagem2);
+
+let mensagem3 =
+  "A jogadora possui " +
+  player["medals"]["golden"].length +
+  " medalhas de ouro e " +
+  player["medals"]["silver"].length +
+  " medalhas de prata";
+
+  console.log(mensagem3)
