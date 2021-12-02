@@ -62,12 +62,12 @@ function verifica(value) {
   } else if (value < 0) {
     return "Negativo";
   } else {
-    ("Zero");
+   return "Zero";
   }
 }
 
 console.log(verifica(0));
-//esta retornando undefined
+
 
 //topico5
 
