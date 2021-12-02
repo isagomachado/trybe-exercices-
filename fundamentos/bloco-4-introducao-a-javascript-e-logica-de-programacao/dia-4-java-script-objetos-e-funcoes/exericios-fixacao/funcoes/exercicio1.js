@@ -28,3 +28,16 @@ console.log(multiplica(5,13))
 console.log(divide(5,13))
 console.log(modulo(5,13))
 
+
+//topico2
+
+function maiorNumero(a,b) {
+
+  if (a > b){
+    return a 
+  } else{
+    return b
+  }
+}
+
+console.log(maiorNumero(65,455))
