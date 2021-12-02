@@ -41,3 +41,23 @@ function maiorNumero(a,b) {
 }
 
 console.log(maiorNumero(65,455))
+
+
+//topico3
+
+function maiorNumero2(a,b,c) {
+  
+  if (a > b && a > c){
+    return a
+  } else if (b > c && b > a){
+    return b
+  } else{
+    return c
+  }
+}
+
+console.log(maiorNumero2(54,4744,725))
+
+
+//topico4
+
