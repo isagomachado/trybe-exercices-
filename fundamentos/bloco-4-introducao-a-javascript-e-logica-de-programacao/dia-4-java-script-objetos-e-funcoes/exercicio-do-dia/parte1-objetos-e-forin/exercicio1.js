@@ -11,3 +11,8 @@ console.log(mensagem)
 
 //exercicio2
 
+info.recorrente = "sim"
+
+console.log(info)
+
+//exercicio3
