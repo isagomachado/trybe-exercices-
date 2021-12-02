@@ -16,3 +16,7 @@ info.recorrente = "sim"
 console.log(info)
 
 //exercicio3
+
+for (let key in info){
+  console.log(key)
+}
