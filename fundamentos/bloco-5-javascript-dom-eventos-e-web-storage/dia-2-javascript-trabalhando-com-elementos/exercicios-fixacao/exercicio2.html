@@ -12,6 +12,11 @@
 </main>
 
 <script>
-  let ondeVoceEsta = document.getElementById("elementoOndeVoceEsta");
-  
+  let ondeVoceEsta = document.getElementById("elementoOndeVoceEsta").parentNode;
+  ondeVoceEsta.style.color = "red";
+
+  let textoNoPrimeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
+  textoNoPrimeiroFilhoDoFilho.innerText = "adiciona um texto qualquer";
+
+  let chegarNoPrimeiroFilho = document.getElementById("pai")
 </script>
