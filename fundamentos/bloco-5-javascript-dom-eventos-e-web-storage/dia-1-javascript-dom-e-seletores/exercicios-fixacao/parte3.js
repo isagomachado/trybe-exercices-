@@ -15,3 +15,9 @@ testeDir[1].style.backgroundColor = "black"
 
 let rodape = document.getElementById("footer-container")
 rodape.style.backgroundColor = "#2fc18c"
+
+let fundoDir = document.querySelectorAll(".tudo-direita")
+fundoDir[0].style.backgroundColor = "#ff9f84"
+fundoDir[1].style.backgroundColor = "#ff9f84"
+
+let fundoEsq = document.querySelectorAll("tudo-esquerda")
