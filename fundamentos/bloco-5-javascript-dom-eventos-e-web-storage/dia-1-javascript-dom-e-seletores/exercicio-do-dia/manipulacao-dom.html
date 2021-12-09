@@ -69,15 +69,15 @@
       corrigeTitulo[0].innerText = "Exercício 5.1 - JavaEscripit";
 
       const maiusculo = document.querySelectorAll("p");
-      maiusculo[0].style.textTransform = "uppercase";
-      maiusculo[1].style.textTransform = "uppercase";
-      maiusculo[2].style.textTransform = "uppercase";
-
+      for (let index = 0; index < maiusculo.length; index += 1){
+        maiusculo[index].style.textTransform = "uppercase"
+      }
+      
       // imprimir o conteúdo textual do todos os paragrafos no console 
-      console.log(maiusculo[0].innerText)
-      console.log(maiusculo[1].innerText)
-      console.log(maiusculo[2].innerText)
-
+      for (let index = 0; index < maiusculo.length; index += 1){
+        console.log(maiusculo[index].innerText)
+      }
+      
 
     </script>
   </body>
