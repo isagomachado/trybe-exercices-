@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  text-indent: 30px;
+}
+
+.title {
+  background-color: #43aa8b;
+  text-align: center;
+  padding: 20px;
+}
+
+.links {
+  background-color: #f9c74f;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #577590;
+}
+
+.link-content {
+  text-decoration: none;
+  color: black;
+  padding: 1px 5px;
+  margin-right: 1px;
+}
+
+main {
+  background-color: #90be6d;
+  text-align: justify;
+}
+.about {
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.first {
+  padding: 20px;
+}
+
+.list-first {
+  list-style: square;
+}
+
+.bouth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.second {
+  padding: 20px;
+  width: 45%;
+  vertical-align: middle;
+  background-color: #f3722c;
+}
+
+.third {
+  padding: 20px;
+  width: 45%;
+  vertical-align: middle;
+  background-color: #f3722c;
+}
+
+.photo {
+  width: 300px;
+  padding: 20px;
+}
+
+.video {
+  margin-top: 45px;
+  text-align: center;
+  background-color: #f94144;
+}
+
+.video-mesmo {
+  padding: 20px;
+  /* display: block; */
+  margin: auto;
+}
+
+.references {
+  margin-top: 45px;
+}
+
+.references-content {
+  padding: 10px 20px;
+}
+
+ol li.wiki:hover {
+  background-color: black;
+}
+
+ol li.natgeo:hover {
+  background-color: yellow;
+}
+
+ol li.otm:hover {
+  background-color: #f9844a;
+}
+
+.footer {
+  background-color: #43aa8b;
+  padding: 30px;
+}
