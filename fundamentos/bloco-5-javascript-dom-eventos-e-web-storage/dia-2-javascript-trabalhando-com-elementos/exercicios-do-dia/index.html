@@ -89,6 +89,22 @@
       creatP.innerText = "Estou conseguindo criar varios elementos HTML através de comandos direto no JavaScript";
       creatSection.appendChild(creatP)
 
+      // 
+      // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2
+      // 
+
+      let creatSection2 = document.createElement("section");
+      creatSection2.className = "left-content"
+      creatMain.appendChild(creatSection2)
+
+      // 
+      // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+      // 
+
+      let creatSection3 = document.createElement("section");
+      creatSection3.className = "right-content"
+      creatMain.appendChild(creatSection3)
+
       console.log(getbody);
     </script>
   </body>
