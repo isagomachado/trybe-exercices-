@@ -58,7 +58,7 @@ let getOndeVoceEsta = document.getElementById("elementoOndeVoceEsta")
 let criaElementoFilho = document.createElement("div")
 criaElementoFilho.className = "requisito2"
 getOndeVoceEsta.appendChild(criaElementoFilho)
-console.log(getOndeVoceEsta)
+console.log(getOndeVoceEsta.children)
 
 // Crie um filho para primeiroFilhoDoFilho .
 
@@ -66,5 +66,9 @@ let getPrimeiroFilhoDoFilho = getOndeVoceEsta.firstElementChild
 let criaElementoFilhoProFilhodoFilho = document.createElement("div")
 criaElementoFilhoProFilhodoFilho.className = "requisito3"
 getPrimeiroFilhoDoFilho.appendChild(criaElementoFilhoProFilhodoFilho)
-console.log(getPrimeiroFilhoDoFilho)
+console.log(getPrimeiroFilhoDoFilho.children)
+
+// A partir desse filho criado, acesse terceiroFilho .
+let vamoVe = criaElementoFilhoProFilhodoFilho.parentElement.parentElement.nextElementSibling
+console.log(vamoVe)
 </script>
