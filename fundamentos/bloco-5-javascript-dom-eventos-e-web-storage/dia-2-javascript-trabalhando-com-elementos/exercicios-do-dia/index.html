@@ -124,17 +124,38 @@
 
       // criar elementos da lista
       let numbers = [
-        "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez",
+        "um",
+        "dois",
+        "três",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
       ];
-     
+
       for (let index = 0; index < numbers.length; index += 1) {
-        let number = numbers[index]
+        let number = numbers[index];
         let creatElementsList = document.createElement("li");
         creatElementsList.innerText = number;
-        creatUl.appendChild(creatElementsList)
+        creatUl.appendChild(creatElementsList);
       }
 
-     
+      //
+      // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      //
+      let titulos = ["Primeiro Titulo", "Segundo Titulo", "Terceiro Titulo"];
+      for (let index = 0; index < titulos.length; index += 1) {
+        let titulo = titulos[index];
+        let createH3 = document.createElement("h3");
+        createH3.innerText = titulo;
+        creatMain.appendChild(createH3);
+      }
+
+      //
+      //
     </script>
   </body>
 </html>
