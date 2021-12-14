@@ -86,41 +86,55 @@
       //
 
       let creatP = document.createElement("p");
-      creatP.innerText = "Estou conseguindo criar varios elementos HTML através de comandos direto no JavaScript";
-      creatSection.appendChild(creatP)
+      creatP.innerText =
+        "Estou conseguindo criar varios elementos HTML através de comandos direto no JavaScript";
+      creatSection.appendChild(creatP);
 
-      // 
+      //
       // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2
-      // 
+      //
 
       let creatSectionLeft = document.createElement("section");
-      creatSectionLeft.className = "left-content"
-      creatMain.appendChild(creatSectionLeft)
+      creatSectionLeft.className = "left-content";
+      creatMain.appendChild(creatSectionLeft);
 
-      // 
+      //
       // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-      // 
+      //
 
       let creatSectionRight = document.createElement("section");
-      creatSectionRight.className = "right-content"
-      creatMain.appendChild(creatSectionRight)
+      creatSectionRight.className = "right-content";
+      creatMain.appendChild(creatSectionRight);
 
-      // 
+      //
       // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
-      // 
+      //
 
-      let creatImg = document.createElement("img")
-      creatImg.src = "https://picsum.photos/200"
-      creatImg.className = "small-image"
-      creatSectionLeft.appendChild(creatImg)
+      let creatImg = document.createElement("img");
+      creatImg.src = "https://picsum.photos/200";
+      creatImg.className = "small-image";
+      creatSectionLeft.appendChild(creatImg);
 
-      // 
+      //
       // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-      // 
+      //
+      // criar a lista
+      let creatUl = document.createElement("ul");
+      creatSectionRight.appendChild(creatUl);
 
+      // criar elementos da lista
+      let numbers = [
+        "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez",
+      ];
+     
+      for (let index = 0; index < numbers.length; index += 1) {
+        let number = numbers[index]
+        let creatElementsList = document.createElement("li");
+        creatElementsList.innerText = number;
+        creatUl.appendChild(creatElementsList)
+      }
 
-
-      console.log(getbody);
+     
     </script>
   </body>
 </html>
