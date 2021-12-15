@@ -44,12 +44,14 @@ firstLi.addEventListener('dblclick', resetText);
 //
 //
 
-function adicionaClasse (event){
+// Requisito 2
+
+function adicionaClasse(event){
 event.target.className = "tech";
 resetClass(event)
 }
 
-function resetClass (event){
+function resetClass(event){
   if (event.target !== firstLi){
     firstLi.classList.remove("tech")
   }
@@ -64,3 +66,11 @@ function resetClass (event){
 firstLi.addEventListener("click", adicionaClasse);
 secondLi.addEventListener("click", adicionaClasse);
 thirdLi.addEventListener("click", adicionaClasse);
+
+function mudaTexto(event){
+let element = document.querySelector(".tech")
+let getText = event.target.value
+element.innerText = getText
+}
+
+input.addEventListener("keyup" , mudaTexto)
