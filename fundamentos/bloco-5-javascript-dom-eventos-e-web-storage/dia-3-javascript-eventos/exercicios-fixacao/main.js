@@ -37,3 +37,30 @@ firstLi.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
+
+// 
+// 
+//////////////////////////////RESOLVER O EXERCICIO////////////////////////////
+//
+//
+
+function adicionaClasse (event){
+event.target.className = "tech";
+resetClass(event)
+}
+
+function resetClass (event){
+  if (event.target !== firstLi){
+    firstLi.classList.remove("tech")
+  }
+  if (event.target !== secondLi){
+    secondLi.classList.remove("tech")
+  }
+  if (event.target !== thirdLi){
+    thirdLi.classList.remove("tech")
+  }
+}
+
+firstLi.addEventListener("click", adicionaClasse);
+secondLi.addEventListener("click", adicionaClasse);
+thirdLi.addEventListener("click", adicionaClasse);
