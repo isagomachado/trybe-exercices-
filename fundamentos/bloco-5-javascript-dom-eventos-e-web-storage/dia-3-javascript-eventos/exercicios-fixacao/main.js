@@ -65,6 +65,8 @@ firstLi.addEventListener("click", adicionaClasse);
 secondLi.addEventListener("click", adicionaClasse);
 thirdLi.addEventListener("click", adicionaClasse);
 
+//////////////////////////////////////////////////////////////////////////////////////
+
 // Requisito 3
 
 function mudaTexto(event) {
@@ -75,6 +77,8 @@ function mudaTexto(event) {
 
 input.addEventListener("keyup", mudaTexto);
 
+//////////////////////////////////////////////////////////////////////////////////////
+
 // Requisito 4
 
 function redirecionar(event) {
@@ -83,3 +87,18 @@ function redirecionar(event) {
 }
 
 myWebpage.addEventListener("dblclick", redirecionar);
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Requisito 5
+
+function mudaCor(event) {
+  event.target.style.color = "red"
+}
+
+function voltaCor(event) {
+  event.target.style.color = "white"
+}
+
+myWebpage.addEventListener("mouseover", mudaCor);
+myWebpage.addEventListener("mouseleave", voltaCor )
