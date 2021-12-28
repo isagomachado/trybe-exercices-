@@ -56,7 +56,29 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-        const tagP = document.querySelectorAll("")
+      const tagP = document.getElementsByTagName("p");
+      tagP[1].innerText = "Rica!!";
+
+      const mudaCorCantos = document.querySelectorAll(".main-content");
+      mudaCorCantos[0].style.backgroundColor = "rgb(76,164,109)";
+
+      const mudaCorMeio = document.querySelectorAll(".center-content");
+      mudaCorMeio[0].style.backgroundColor = "white";
+
+      const corrigeTitulo = document.querySelectorAll(".title");
+      corrigeTitulo[0].innerText = "Exercício 5.1 - JavaEscripit";
+
+      const maiusculo = document.querySelectorAll("p");
+      for (let index = 0; index < maiusculo.length; index += 1){
+        maiusculo[index].style.textTransform = "uppercase"
+      }
+      
+      // imprimir o conteúdo textual do todos os paragrafos no console 
+      for (let index = 0; index < maiusculo.length; index += 1){
+        console.log(maiusculo[index].innerText)
+      }
+      
+
     </script>
   </body>
 </html>
