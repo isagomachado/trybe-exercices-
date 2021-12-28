@@ -1,0 +1,105 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+
+<script>
+  // 
+  // 
+  // exerciico parte1 - buscando elementos 
+  // 
+  // 
+  // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+
+  let ondeVoceEsta = document.getElementById("elementoOndeVoceEsta").parentNode;
+  ondeVoceEsta.style.color = "red";
+
+  // Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
+
+  let textoNoPrimeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
+  textoNoPrimeiroFilhoDoFilho.innerText = "adiciona um texto qualquer";
+
+  // Acesse o primeiroFilho a partir de pai .
+
+  let chegarNoPrimeiroFilho = document.getElementById("pai").firstElementChild;
+
+  // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+  
+  let req5 = document.getElementById("elementoOndeVoceEsta").previousElementSibling;
+
+  // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+
+  let req6 = document.getElementById("elementoOndeVoceEsta").nextSibling;
+
+  // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+
+let req7 = document.getElementById("elementoOndeVoceEsta").nextElementSibling;
+
+// Agora acesse o terceiroFilho a partir de pai .
+
+let req8 = document.getElementById("pai").lastElementChild.previousElementSibling
+
+// 
+// 
+// exercicio parte2 - criar elementos e colocar no html 
+// 
+// 
+// Crie um irmão para elementoOndeVoceEsta .
+
+let criaElementoIrmao = document.createElement("div")
+criaElementoIrmao.className = "requisito1"
+ondeVoceEsta.appendChild(criaElementoIrmao)
+console.log(ondeVoceEsta.children)
+
+// Crie um filho para elementoOndeVoceEsta .
+
+let getOndeVoceEsta = document.getElementById("elementoOndeVoceEsta")
+let criaElementoFilho = document.createElement("div")
+criaElementoFilho.className = "requisito2"
+getOndeVoceEsta.appendChild(criaElementoFilho)
+console.log(getOndeVoceEsta.children)
+
+// Crie um filho para primeiroFilhoDoFilho .
+
+let getPrimeiroFilhoDoFilho = getOndeVoceEsta.firstElementChild
+let criaElementoFilhoProFilhodoFilho = document.createElement("div")
+criaElementoFilhoProFilhodoFilho.className = "requisito3"
+getPrimeiroFilhoDoFilho.appendChild(criaElementoFilhoProFilhodoFilho)
+console.log(getPrimeiroFilhoDoFilho.children)
+
+// A partir desse filho criado, acesse terceiroFilho .
+let vamoVe = criaElementoFilhoProFilhodoFilho.parentElement.parentElement.nextElementSibling
+console.log(vamoVe)
+
+
+//
+//
+//parte 3 - remover elementos 
+// 
+// 
+
+let getPai = document.getElementById("paiDoPai").firstElementChild
+getPai.removeChild(primeiroFilho)
+getPai.removeChild(terceiroFilho)
+getPai.removeChild(quartoEUltimoFilho)
+getPai.removeChild(criaElementoIrmao)
+
+
+
+// removendo filhos do elementoOndeVoceEsta
+getOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho)
+getOndeVoceEsta.removeChild(criaElementoFilho)
+
+
+//remove filho do primeiroFilhoDoFilho
+getPrimeiroFilhoDoFilho.remove(criaElementoFilhoProFilhodoFilho)
+console.log(getPrimeiroFilhoDoFilho.children)
+</script>
