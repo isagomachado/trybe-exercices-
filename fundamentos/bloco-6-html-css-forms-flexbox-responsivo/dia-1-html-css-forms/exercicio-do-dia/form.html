@@ -8,11 +8,11 @@
     <form action="" method="GET">
       <fieldset>
         <legend>Informações Pessoais:</legend>
-        <div>
+        <div class="line-content">
           <label for="name">Nome:</label>
           <input type="text" name="nome" id="name" maxlength="40" required />
         </div>
-        <div>
+        <div class="line-content">
           <label for="input-email">E-mail:</label>
           <input
             type="text"
@@ -22,7 +22,7 @@
             maxlength="50"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="input-cpf">CPF:</label>
           <input
             type="text"
@@ -32,7 +32,7 @@
             required
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="input-address">Endereço:</label>
           <input
             type="text"
@@ -42,7 +42,7 @@
             required
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="input-city">Cidade:</label>
           <input
             type="text"
@@ -52,11 +52,11 @@
             required
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="select-state">Estado:</label>
           <select name="Estado" id="select-state" required></select>
         </div>
-        <div>
+        <div class="line-content">
           <p>Tipo de residência:</p>
           <label for="radio-casa">Casa</label>
           <input
@@ -65,7 +65,7 @@
             id="radio-casa"
             value="casa"
             required
-          /> 
+          />
           <label for="radio-apto">apartamento</label>
           <input
             type="radio"
@@ -75,6 +75,44 @@
             required
           />
         </div>
+      </fieldset>
+      <fieldset>
+        <legend>Ultimo emprego:</legend>
+        <div class="line-content">
+          <div>
+            <label for="curriculo-area">Resumo do curriculo:</label>
+          </div>
+          <textarea
+            name="curriculo"
+            id="curriculo-area"
+            cols="30"
+            rows="10"
+            maxlength="1000"
+            required
+          ></textarea>
+        </div>
+        <div class="line-content"> 
+          <label for="input-cargo">Cargo:</label>
+          <input type="text" name="cargo" id="input-cargo" maxlength="40" required>
+        </div>
+        <div class="line-content">
+          <div>
+            <label for="description-area">Descrição do cargo:</label>
+          </div>
+          <textarea
+            name="descriçao"
+            id="description-area"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+        <div class="line-content"> 
+          <label for="input-data">Data de inicio:</label>
+          <input type="date" name="data" id="input-data" required>
+        </div>
+
       </fieldset>
     </form>
     <script src="script.js"></script>
