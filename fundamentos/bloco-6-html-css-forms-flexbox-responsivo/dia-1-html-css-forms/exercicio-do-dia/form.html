@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Informações Pessoais:</legend>
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" name="nome" id="name" maxlength="40" required />
+        </div>
+        <div>
+          <label for="input-email">E-mail:</label>
+          <input
+            type="text"
+            name="email"
+            id="input-email"
+            required
+            maxlength="50"
+          />
+        </div>
+        <div>
+          <label for="input-cpf">CPF:</label>
+          <input
+            type="text"
+            name="cpf"
+            id="input-cpf"
+            maxlength="11"
+            required
+          />
+        </div>
+        <div>
+          <label for="input-address">Endereço:</label>
+          <input
+            type="text"
+            name="Endereco"
+            id="input-address"
+            maxlength="200"
+            required
+          />
+        </div>
+        <div>
+          <label for="input-city">Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            id="input-city"
+            maxlength="28"
+            required
+          />
+        </div>
+        <div>
+          <label for="select-state">Estado:</label>
+          <select name="Estado" id="select-state" required></select>
+        </div>
+        <div>
+          <p>Tipo de residência:</p>
+          <label for="radio-casa">Casa</label>
+          <input
+            type="radio"
+            name="residencia"
+            id="radio-casa"
+            value="casa"
+            required
+          /> 
+          <label for="radio-apto">apartamento</label>
+          <input
+            type="radio"
+            name="residencia"
+            id="radio-apto"
+            value="apartamento"
+            required
+          />
+        </div>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
