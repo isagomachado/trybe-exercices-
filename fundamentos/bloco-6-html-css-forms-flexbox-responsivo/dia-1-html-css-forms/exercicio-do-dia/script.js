@@ -6,7 +6,7 @@ window.onload = function() {
   criaOption()
   
   function criaOption() {
-       for (let index = 0; index < BrazilianStates.length; index += 1){
+      for (let index = 0; index < BrazilianStates.length; index += 1){
       let state = BrazilianStates[index];
       let criaOptions = document.createElement('option');
       criaOptions.innerText = state
