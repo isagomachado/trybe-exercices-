@@ -1,11 +1,5 @@
-const fator = (number) => {
+const fator = (number) => (number > 1) ? number * fator(number - 1) :  number;
     
-  if (number > 1) {
-   return number * fator(number - 1)
-  } 
-  
-  return number
-  
-};
+ 
 
-console.log(fator(5));
+console.log(fator(3));
