@@ -1,5 +1,3 @@
-
-
 const fator = (number) => {
     
   if (number > 1) {
