@@ -10,3 +10,5 @@ const showEmailList = (email) => {
 };
 
 // Adicione seu código aqui
+
+emailListInData.forEach(showEmailList);
