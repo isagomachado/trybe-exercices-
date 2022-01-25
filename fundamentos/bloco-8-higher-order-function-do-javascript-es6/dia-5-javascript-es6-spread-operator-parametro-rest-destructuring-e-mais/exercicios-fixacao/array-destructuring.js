@@ -1,0 +1,15 @@
+////////// EXERCICIO 1//////////////
+const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+
+saudacoes[1](saudacoes[0]); // Olá
+
+// Produza o mesmo resultado acima, porém utilizando array destructuring
+
+
+const [text, func] = saudacoes
+
+func(text)
+
+console.log(text)
+console.log(func)
+
