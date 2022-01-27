@@ -91,3 +91,17 @@ const fantasyOrScienceFiction = (book) => book.genre === 'Ficção Científica' 
 const useFilter = books.filter(fantasyOrScienceFiction)
 
 console.log(useFilter)
+
+/////////////////////// EXERCICIO 4
+
+function oldBooksOrdered() {
+  return books.filter((book) => (2022 - book.releaseYear) > 60).sort((obj1, obj2) => obj1.releaseYear - obj2.releaseYear); 
+}
+
+console.log(oldBooksOrdered())
+
+///////////////////////// EXERCICIO 5
+
+function fantasyOrScienceFictionAuthors() {
+  // escreva seu código aqui
+}
