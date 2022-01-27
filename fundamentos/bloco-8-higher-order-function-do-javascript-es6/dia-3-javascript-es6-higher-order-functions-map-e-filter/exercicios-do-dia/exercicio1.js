@@ -86,11 +86,11 @@ console.log(nameAndAge());
 
 //////////////////////// EXERCICIO 3
 
-const fantasyOrScienceFiction = (book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia' ? true : false;
+const fantasyOrScienceFiction = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
 
-const useFilter = books.filter(fantasyOrScienceFiction)
+// const useFilter = books.filter(fantasyOrScienceFiction)
 
-console.log(useFilter)
+console.log(fantasyOrScienceFiction)
 
 /////////////////////// EXERCICIO 4
 
@@ -103,5 +103,7 @@ console.log(oldBooksOrdered())
 ///////////////////////// EXERCICIO 5
 
 function fantasyOrScienceFictionAuthors() {
-  // escreva seu código aqui
+  return fantasyOrScienceFiction.map((item) => item.author.name).sort();
 }
+
+console.log(fantasyOrScienceFictionAuthors())
