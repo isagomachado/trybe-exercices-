@@ -61,19 +61,33 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
-const expectedResult = [
-  "As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin",
-  "O Senhor dos Anéis - Fantasia - J. R. R. Tolkien",
-  "Fundação - Ficção Científica - Isaac Asimov",
-  "Duna - Ficção Científica - Frank Herbert",
-  "A Coisa - Terror - Stephen King",
-  "O Chamado de Cthulhu - Terror - H. P. Lovecraft",
-];
+////////////////// EXERCICIO 1
 
 const formatedBookNames = (book) => `${book.name} - ${book.genre} - ${book.author.name} `;
 
 const useMap = books.map(formatedBookNames) 
 
 console.log(useMap)
+
+////////////////////////////// EXERCICIO 2
+
+function nameAndAge() {
+  return books
+  .map((book) => (
+  {
+    age: book.releaseYear - book.author.birthYear,
+    author: book.author.name, 
+  }
+  ))
+  .sort((obj1, obj2) => obj1.age - obj2.age)
+}
+
+console.log(nameAndAge());
+
+//////////////////////// EXERCICIO 3
+
+const fantasyOrScienceFiction = (book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia' ? true : false;
+
+const useFilter = books.filter(fantasyOrScienceFiction)
+
+console.log(useFilter)
