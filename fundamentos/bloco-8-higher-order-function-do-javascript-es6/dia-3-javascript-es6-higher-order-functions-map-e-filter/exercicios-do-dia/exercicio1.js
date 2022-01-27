@@ -107,3 +107,24 @@ function fantasyOrScienceFictionAuthors() {
 }
 
 console.log(fantasyOrScienceFictionAuthors())
+
+///////////////////////// EXERCICIO 6 
+
+function oldBooks() {
+  const usaFunction = oldBooksOrdered()
+  return usaFunction.map((item) => item.name)
+}
+
+console.log(oldBooks())
+
+///////////////// EXERCICIO 7
+
+function authorWith3DotsOnName() {
+  return books.filter((book) => (
+    book.author.name[1] === '.'
+    && book.author.name[4] === '.'
+    && book.author.name[7] === '.'
+  ))[0].name
+}
+
+console.log(authorWith3DotsOnName())
