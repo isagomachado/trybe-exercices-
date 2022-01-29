@@ -8,7 +8,7 @@
 
 // console.log(numbers);
 
-///////////////////////////////////////// COLOCA UM .PUSH NUMA FNÇÃO ASSINCRONA, ETÃO ESSA LINHA SÓ SERÁ EXECUTADA DEPOIS DE 3000 MILISSEGUNDS (3MIN)
+///////////////////////////////////////// COLOCA UM .PUSH NUMA FNÇÃO ASSINCRONA, ETÃO ESSA LINHA SÓ SERÁ EXECUTADA DEPOIS DE 3000 MILISSEGUNDS (3SEG)
 
 // const pushNumber = (list, number) => list.push(number);
 
@@ -20,7 +20,7 @@
 
 // console.log(numbers); // O retorno é [2, 3]
 
-/////////////////////// CONSOLE.LOG EXECUTA APENAS DEPOIS DE 3MIN TAMBÉM 
+/////////////////////// CONSOLE.LOG EXECUTA APENAS DEPOIS DE 3SEG TAMBÉM 
 
 const pushNumber = (list, number) => list.push(number);
 
