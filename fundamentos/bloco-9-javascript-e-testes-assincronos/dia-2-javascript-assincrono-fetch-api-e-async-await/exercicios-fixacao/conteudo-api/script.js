@@ -23,6 +23,9 @@ const jsonInfo = `{
 
 const usoJSONPorque = JSON.parse(jsonInfo);
 
+console.log(jsonInfo);
+console.log(usoJSONPorque);
+
 const corporationsList = document.getElementById('corporations-used-by');
 const advantagesList = document.getElementById('advantages');
 const languagesList = document.getElementById('languages-used-by');
