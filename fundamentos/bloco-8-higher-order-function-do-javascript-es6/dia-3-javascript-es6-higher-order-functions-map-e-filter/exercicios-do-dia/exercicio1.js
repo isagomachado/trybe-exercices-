@@ -61,19 +61,70 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
-const expectedResult = [
-  "As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin",
-  "O Senhor dos Anéis - Fantasia - J. R. R. Tolkien",
-  "Fundação - Ficção Científica - Isaac Asimov",
-  "Duna - Ficção Científica - Frank Herbert",
-  "A Coisa - Terror - Stephen King",
-  "O Chamado de Cthulhu - Terror - H. P. Lovecraft",
-];
+////////////////// EXERCICIO 1
 
 const formatedBookNames = (book) => `${book.name} - ${book.genre} - ${book.author.name} `;
 
 const useMap = books.map(formatedBookNames) 
 
 console.log(useMap)
+
+////////////////////////////// EXERCICIO 2
+
+function nameAndAge() {
+  return books
+  .map((book) => (
+  {
+    age: book.releaseYear - book.author.birthYear,
+    author: book.author.name, 
+  }
+  ))
+  .sort((obj1, obj2) => obj1.age - obj2.age)
+}
+
+console.log(nameAndAge());
+
+//////////////////////// EXERCICIO 3
+
+const fantasyOrScienceFiction = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
+
+// const useFilter = books.filter(fantasyOrScienceFiction)
+
+console.log(fantasyOrScienceFiction)
+
+/////////////////////// EXERCICIO 4
+
+function oldBooksOrdered() {
+  return books.filter((book) => (2022 - book.releaseYear) > 60).sort((obj1, obj2) => obj1.releaseYear - obj2.releaseYear); 
+}
+
+console.log(oldBooksOrdered())
+
+///////////////////////// EXERCICIO 5
+
+function fantasyOrScienceFictionAuthors() {
+  return fantasyOrScienceFiction.map((item) => item.author.name).sort();
+}
+
+console.log(fantasyOrScienceFictionAuthors())
+
+///////////////////////// EXERCICIO 6 
+
+function oldBooks() {
+  const usaFunction = oldBooksOrdered()
+  return usaFunction.map((item) => item.name)
+}
+
+console.log(oldBooks())
+
+///////////////// EXERCICIO 7
+
+function authorWith3DotsOnName() {
+  return books.filter((book) => (
+    book.author.name[1] === '.'
+    && book.author.name[4] === '.'
+    && book.author.name[7] === '.'
+  ))[0].name
+}
+
+console.log(authorWith3DotsOnName())
