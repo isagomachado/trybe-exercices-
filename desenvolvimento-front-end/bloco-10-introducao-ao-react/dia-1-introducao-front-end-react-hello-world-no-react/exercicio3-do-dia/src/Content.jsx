@@ -25,7 +25,18 @@ const conteudos = [
 
 class Content extends React.Component {
   render() {
-    return 
+    return (
+      <div>
+        {conteudos.map((cont) => (
+          <div key={cont.conteudo}>
+            <h4>{`O conteudo é: ${cont.conteudo}`}</h4>
+            <p>{`Status: ${cont.status}`}</p>
+            <p>{`Bloco: ${cont.bloco}`}</p>
+          </div>
+        ))}
+      </div>
+    );
   }
 }
 
+export default Content;
