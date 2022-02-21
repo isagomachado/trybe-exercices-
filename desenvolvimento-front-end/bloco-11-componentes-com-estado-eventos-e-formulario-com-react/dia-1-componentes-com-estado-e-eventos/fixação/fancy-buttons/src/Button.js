@@ -1,13 +1,22 @@
 import React from 'react';
 
-function handleClick() {
-  console.log('Clicou no botão!');
-}
 
 class Button extends React.Component {
+  constructor() {
+    super()
+    console.log('Um componente em construção')
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+    console.log('Clicou no botão!');
+    console.log(this);
+  }
+
   render() {
     return (
-      <button onClick={handleClick}>Meu botão</button>
+      <button onClick={this.handleClick}>Meu botão</button>
     );
   }
 }
