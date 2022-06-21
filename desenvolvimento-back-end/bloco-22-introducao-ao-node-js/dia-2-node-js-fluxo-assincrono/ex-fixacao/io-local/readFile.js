@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 
 const nomeDoArquivo = 'meu-arquivo.txt';
 
+//callbacks
 // fs.readFile(nomeDoArquivo, 'utf8', (err, data) => {
 //   if(err) {
 //     console.error(`não foi possivel ler o arquivo ${nomeDoArquivo}\n Error: ${err}`);
@@ -12,6 +13,8 @@ const nomeDoArquivo = 'meu-arquivo.txt';
 //   console.log(`Conteúdo do arquivo: ${data}`);
 // });
 
+
+//retorna promise
 fs.readFile(nomeDoArquivo, 'utf8')
   .then((data) => {
     console.log(`Conteúdo do arquivo: ${data}`);
