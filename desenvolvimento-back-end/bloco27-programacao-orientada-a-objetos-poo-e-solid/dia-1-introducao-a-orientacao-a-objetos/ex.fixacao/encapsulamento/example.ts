@@ -1,4 +1,4 @@
-class Person {
+class Perso {
   name: string;
   private _weight: number;
   private _age: number;
@@ -35,8 +35,8 @@ class Person {
 
 }
 
-const p1 = new Person('Maria', 171, 58, 19);
-const p2 = new Person('João', 175, 66, 18);
+const p1 = new Perso('Maria', 171, 58, 19);
+const p2 = new Perso('João', 175, 66, 18);
 
 // Alteração direta de variável pública
 p1.name = 'Mariah';
